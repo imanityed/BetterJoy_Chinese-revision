@@ -1,10 +1,11 @@
 <p align="center">
   <img src="title.png">
 </p>
+
 # BetterJoy Chinese-revision
 This is the Chinese revised version of the software. The following is the README of the original project.
 Current version: v6.4a
-Source author link: https://github.com/Davidobot/BetterJoy
+[Source author](https://github.com/Davidobot/BetterJoy)
 
 # BetterJoy v6.3
 Allows the Nintendo Switch Pro Controller, Joycons, and Switch SNES controller to be used with [Cemu](http://cemu.info/) using [Cemuhook](https://sshnuke.net/cemuhook/), [Citra](https://citra-emu.org/), [Dolphin](https://dolphin-emu.org/), [Yuzu](https://yuzu-emu.org/), and system-wide with generic XInput support.
