@@ -157,82 +157,15 @@
     <Compile Include="UpdServer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="! Install the drivers in the Drivers folder">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Drivers\HIDGuardian\HIDGuardian Install %28Run as Admin%29.bat">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Drivers\HIDGuardian\HIDGuardian Uninstall %28Run as Admin%29.bat">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\HidCerberus.Srv.exe.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Drivers\HIDGuardian\_drivers\HidGuardian\hidguardian.cat">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Drivers\HIDGuardian\_drivers\HidGuardian\HidGuardian.sys">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Drivers.7z" />
     <None Include="packages.config" />
+    <None Include="！请解压Drivers.7z文件安装驱动程序" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".nuget\mouse-keyboard-hook-logo.png" />
-    <Content Include="Drivers\HIDGuardian\_drivers\devcon.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Lib.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\custom\api-requests.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\custom\viewmodels.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\dep\bootstrap-theme.min.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\dep\bootstrap.min.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\dep\bootstrap.min.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\dep\jquery-3.2.1.min.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\dep\jquery.form.min.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\dep\knockout-min.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\Content\dep\knockout.mapping.min.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\HidCerberus.Srv.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidCerberus.Srv\index.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidGuardian\HidGuardian.inf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\HIDGuardian\_drivers\HidGuardian\WdfCoinstaller01009.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\README.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Drivers\ViGEmBus_Setup_1.16.116.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Icons\snes.png" />
     <None Include="Properties\app.manifest" />
     <Content Include="Icons\betterjoyforcemu_icon.ico" />
