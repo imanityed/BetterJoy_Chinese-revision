@@ -553,11 +553,11 @@ namespace BetterJoyForCemu {
 
 
                 if (ts_en == raw_buf[1] && !isSnes) {
-                    form.AppendTextBox("Duplicate timestamp enqueued.\r\n");
-                    DebugPrint(string.Format("Duplicate timestamp enqueued. TS: {0:X2}", ts_en), DebugType.THREADING);
+                    form.AppendTextBox("入队的时间戳重复。\r\n");
+                    DebugPrint(string.Format("入队的时间戳重复。 时间戳：{0:X2}", ts_en), DebugType.THREADING);
                 }
                 ts_en = raw_buf[1];
-                DebugPrint(string.Format("Enqueue. Bytes read: {0:D}. Timestamp: {1:X2}", ret, raw_buf[1]), DebugType.THREADING);
+                DebugPrint(string.Format("入队。读取：{0:D}字节。时间戳：{1:X2}", ret, raw_buf[1]), DebugType.THREADING);
             }
             return ret;
         }
@@ -752,9 +752,9 @@ namespace BetterJoyForCemu {
                     attempts = 0;
                 } else if (attempts > 240) {
                     state = state_.DROPPED;
-                    form.AppendTextBox("Dropped.\r\n");
+                    form.AppendTextBox("连接中断！\r\n");
 
-                    DebugPrint("Connection lost. Is the Joy-Con connected?", DebugType.ALL);
+                    DebugPrint("连接中断。请确认Joy-Con是否已连接。", DebugType.ALL);
                     break;
                 } else if (a < 0) {
                     // An error on read.
@@ -975,9 +975,9 @@ namespace BetterJoyForCemu {
                 PollThreadObj.IsBackground = true;
                 PollThreadObj.Start();
 
-                form.AppendTextBox("Starting poll thread.\r\n");
+                form.AppendTextBox("正在启动轮询线程。\r\n");
             } else {
-                form.AppendTextBox("Poll cannot start.\r\n");
+                form.AppendTextBox("无法启动轮询。\r\n");
             }
         }
 
@@ -1051,13 +1051,13 @@ namespace BetterJoyForCemu {
             bool found = false;
             for (int i = 0; i < 9; ++i) {
                 if (buf_[i] != 0xff) {
-                    form.AppendTextBox("Using user stick calibration data.\r\n");
+                    form.AppendTextBox("使用用户手柄校准数据。\r\n");
                     found = true;
                     break;
                 }
             }
             if (!found) {
-                form.AppendTextBox("Using factory stick calibration data.\r\n");
+                form.AppendTextBox("使用出厂手柄校准数据。\r\n");
                 buf_ = ReadSPI(0x60, (isLeft ? (byte)0x3d : (byte)0x46), 9); // get user calibration data if possible
             }
             stick_cal[isLeft ? 0 : 2] = (UInt16)((buf_[1] << 8) & 0xF00 | buf_[0]); // X Axis Max above center
@@ -1074,13 +1074,13 @@ namespace BetterJoyForCemu {
                 found = false;
                 for (int i = 0; i < 9; ++i) {
                     if (buf_[i] != 0xff) {
-                        form.AppendTextBox("Using user stick calibration data.\r\n");
+                        form.AppendTextBox("使用用户手柄校准数据。\r\n");
                         found = true;
                         break;
                     }
                 }
                 if (!found) {
-                    form.AppendTextBox("Using factory stick calibration data.\r\n");
+                    form.AppendTextBox("使用出厂手柄校准数据。\r\n");
                     buf_ = ReadSPI(0x60, (!isLeft ? (byte)0x3d : (byte)0x46), 9); // get user calibration data if possible
                 }
                 stick2_cal[!isLeft ? 0 : 2] = (UInt16)((buf_[1] << 8) & 0xF00 | buf_[0]); // X Axis Max above center

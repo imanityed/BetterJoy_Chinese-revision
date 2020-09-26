@@ -4,7 +4,7 @@ using System.IO;
 
 namespace BetterJoyForCemu {
 	public static class Config { // stores dynamic configuration, including
-		const string PATH = "settings";
+		const string PATH = "Settings.ini";
 		static Dictionary<string, string> variables = new Dictionary<string, string>();
 
 		const int settingsNum = 10; // currently - ProgressiveScan, StartInTray + special buttons

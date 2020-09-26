@@ -279,7 +279,7 @@ namespace BetterJoyForCemu {
 
         public void Start(IPAddress ip, int port = 26760) {
             if (!Boolean.Parse(ConfigurationManager.AppSettings["MotionServer"])) {
-                form.console.AppendText("体感服务器（Motion server）已关闭。.\r\n");
+                form.console.AppendText("体感服务器已关闭。.\r\n");
                 return;
             }
 
@@ -296,7 +296,7 @@ namespace BetterJoyForCemu {
                 udpSock.Close();
                 udpSock = null;
 
-                form.console.AppendText("无法启动服务器。请确保一次只运行一个程序实例，并检查是否有其他CemuHook程序正在运行。\r\n");
+                form.console.AppendText("无法启动体感服务器。请确保一次只运行一个程序实例，并检查是否有其他CemuHook程序正在运行。\r\n");
                 return;
             }
 
@@ -305,7 +305,7 @@ namespace BetterJoyForCemu {
             serverId = BitConverter.ToUInt32(randomBuf, 0);
 
             running = true;
-            form.console.AppendText(String.Format("启动并设置服务器地址在 {0}:{1}\r\n", ip.ToString(), port));
+            form.console.AppendText(String.Format("启动并配置体感服务器在 {0}:{1}\r\n", ip.ToString(), port));
             StartReceive();
         }
 

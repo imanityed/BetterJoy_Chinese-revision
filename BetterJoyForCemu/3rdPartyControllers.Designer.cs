@@ -44,9 +44,10 @@
             // list_allControllers
             // 
             this.list_allControllers.FormattingEnabled = true;
-            this.list_allControllers.Location = new System.Drawing.Point(12, 27);
+            this.list_allControllers.ItemHeight = 12;
+            this.list_allControllers.Location = new System.Drawing.Point(12, 25);
             this.list_allControllers.Name = "list_allControllers";
-            this.list_allControllers.Size = new System.Drawing.Size(103, 225);
+            this.list_allControllers.Size = new System.Drawing.Size(103, 208);
             this.list_allControllers.TabIndex = 0;
             this.list_allControllers.SelectedValueChanged += new System.EventHandler(this.list_allControllers_SelectedValueChanged);
             this.list_allControllers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.list_allControllers_MouseDown);
@@ -54,18 +55,19 @@
             // list_customControllers
             // 
             this.list_customControllers.FormattingEnabled = true;
-            this.list_customControllers.Location = new System.Drawing.Point(169, 27);
+            this.list_customControllers.ItemHeight = 12;
+            this.list_customControllers.Location = new System.Drawing.Point(169, 25);
             this.list_customControllers.Name = "list_customControllers";
-            this.list_customControllers.Size = new System.Drawing.Size(103, 108);
+            this.list_customControllers.Size = new System.Drawing.Size(103, 100);
             this.list_customControllers.TabIndex = 1;
             this.list_customControllers.SelectedValueChanged += new System.EventHandler(this.list_customControllers_SelectedValueChanged);
             this.list_customControllers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.list_customControllers_MouseDown);
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(121, 27);
+            this.btn_add.Location = new System.Drawing.Point(121, 25);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(42, 23);
+            this.btn_add.Size = new System.Drawing.Size(42, 21);
             this.btn_add.TabIndex = 2;
             this.btn_add.Text = "->";
             this.btn_add.UseVisualStyleBackColor = true;
@@ -73,9 +75,9 @@
             // 
             // btn_remove
             // 
-            this.btn_remove.Location = new System.Drawing.Point(121, 112);
+            this.btn_remove.Location = new System.Drawing.Point(121, 103);
             this.btn_remove.Name = "btn_remove";
-            this.btn_remove.Size = new System.Drawing.Size(42, 23);
+            this.btn_remove.Size = new System.Drawing.Size(42, 21);
             this.btn_remove.TabIndex = 3;
             this.btn_remove.Text = "<-";
             this.btn_remove.UseVisualStyleBackColor = true;
@@ -85,84 +87,84 @@
             // 
             this.group_props.Controls.Add(this.label2);
             this.group_props.Controls.Add(this.chooseType);
-            this.group_props.Location = new System.Drawing.Point(122, 142);
+            this.group_props.Location = new System.Drawing.Point(122, 131);
             this.group_props.Name = "group_props";
-            this.group_props.Size = new System.Drawing.Size(150, 81);
+            this.group_props.Size = new System.Drawing.Size(150, 75);
             this.group_props.TabIndex = 4;
             this.group_props.TabStop = false;
-            this.group_props.Text = "Settings";
+            this.group_props.Text = "设置";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 22);
+            this.label2.Location = new System.Drawing.Point(10, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Type";
+            this.label2.Text = "类型";
             // 
             // chooseType
             // 
             this.chooseType.FormattingEnabled = true;
-            this.chooseType.Location = new System.Drawing.Point(47, 19);
+            this.chooseType.Location = new System.Drawing.Point(47, 18);
             this.chooseType.Name = "chooseType";
-            this.chooseType.Size = new System.Drawing.Size(97, 21);
+            this.chooseType.Size = new System.Drawing.Size(97, 20);
             this.chooseType.TabIndex = 0;
             this.chooseType.SelectedValueChanged += new System.EventHandler(this.chooseType_SelectedValueChanged);
             // 
             // btn_applyAndClose
             // 
-            this.btn_applyAndClose.Location = new System.Drawing.Point(203, 229);
+            this.btn_applyAndClose.Location = new System.Drawing.Point(203, 211);
             this.btn_applyAndClose.Name = "btn_applyAndClose";
-            this.btn_applyAndClose.Size = new System.Drawing.Size(69, 23);
+            this.btn_applyAndClose.Size = new System.Drawing.Size(69, 21);
             this.btn_applyAndClose.TabIndex = 5;
-            this.btn_applyAndClose.Text = "Close";
+            this.btn_applyAndClose.Text = "退出";
             this.btn_applyAndClose.UseVisualStyleBackColor = true;
             this.btn_applyAndClose.Click += new System.EventHandler(this.btn_applyAndClose_Click);
             // 
             // btn_apply
             // 
-            this.btn_apply.Location = new System.Drawing.Point(121, 229);
+            this.btn_apply.Location = new System.Drawing.Point(121, 211);
             this.btn_apply.Name = "btn_apply";
-            this.btn_apply.Size = new System.Drawing.Size(69, 23);
+            this.btn_apply.Size = new System.Drawing.Size(69, 21);
             this.btn_apply.TabIndex = 6;
-            this.btn_apply.Text = "Apply";
+            this.btn_apply.Text = "应用";
             this.btn_apply.UseVisualStyleBackColor = true;
             this.btn_apply.Click += new System.EventHandler(this.btn_apply_Click);
             // 
             // lbl_all
             // 
             this.lbl_all.AutoSize = true;
-            this.lbl_all.Location = new System.Drawing.Point(12, 11);
+            this.lbl_all.Location = new System.Drawing.Point(12, 10);
             this.lbl_all.Name = "lbl_all";
-            this.lbl_all.Size = new System.Drawing.Size(60, 13);
+            this.lbl_all.Size = new System.Drawing.Size(65, 12);
             this.lbl_all.TabIndex = 7;
-            this.lbl_all.Text = "All Devices";
+            this.lbl_all.Text = "全部控制器";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(166, 11);
+            this.label1.Location = new System.Drawing.Point(166, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.Size = new System.Drawing.Size(77, 12);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Switch Controllers";
+            this.label1.Text = "Switch控制器";
             // 
             // btn_refresh
             // 
-            this.btn_refresh.Location = new System.Drawing.Point(121, 56);
+            this.btn_refresh.Location = new System.Drawing.Point(121, 52);
             this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(42, 50);
+            this.btn_refresh.Size = new System.Drawing.Size(42, 46);
             this.btn_refresh.TabIndex = 9;
-            this.btn_refresh.Text = "Re-\r\nfresh";
+            this.btn_refresh.Text = "刷新";
             this.btn_refresh.UseVisualStyleBackColor = true;
             this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
             // _3rdPartyControllers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 241);
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_all);
@@ -178,8 +180,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "_3rdPartyControllers";
-            this.Text = "Add 3rd-Party Controllers";
+            this.Text = "添加第三方控制器";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._3rdPartyControllers_FormClosing);
+            this.Load += new System.EventHandler(this._3rdPartyControllers_Load);
             this.group_props.ResumeLayout(false);
             this.group_props.PerformLayout();
             this.ResumeLayout(false);

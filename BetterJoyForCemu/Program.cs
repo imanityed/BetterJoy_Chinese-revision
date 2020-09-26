@@ -371,7 +371,7 @@ namespace BetterJoyForCemu {
             if (useHIDG) {
                 form.console.AppendText("HidGuardian已启用。\r\n");
                 try {
-                    var HidCerberusService = new ServiceController("HidCerberus服务");
+                    var HidCerberusService = new ServiceController("HidCerberus Service");
                     if (HidCerberusService.Status == ServiceControllerStatus.Stopped) {
                         form.console.AppendText("HidGuardian已停止。启动中......\r\n");
 

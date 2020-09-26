@@ -33,7 +33,7 @@ namespace BetterJoyForCemu {
                 c.Tag = c.Name.Substring(4);
                 GetPrettyName(c);
 
-                tip_reassign.SetToolTip(c, "Left-click to detect input.\r\nMiddle-click to clear to default.\r\nRight-click to see more options.");
+                tip_reassign.SetToolTip(c, "左键单击以检测输入。\r\n单击鼠标中键以清除默认值。\r\n右键单击以查看更多选项。");
                 c.MouseDown += Remap;
                 c.Menu = menu_joy_buttons;
                 c.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

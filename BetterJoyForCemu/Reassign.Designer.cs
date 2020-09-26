@@ -117,7 +117,7 @@ namespace BetterJoyForCemu {
 			this.lbl_capture.Name = "lbl_capture";
 			this.lbl_capture.Size = new System.Drawing.Size(44, 13);
 			this.lbl_capture.TabIndex = 2;
-			this.lbl_capture.Text = "Capture";
+			this.lbl_capture.Text = "截图键";
 			this.lbl_capture.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// lbl_home
@@ -127,7 +127,7 @@ namespace BetterJoyForCemu {
 			this.lbl_home.Name = "lbl_home";
 			this.lbl_home.Size = new System.Drawing.Size(35, 13);
 			this.lbl_home.TabIndex = 4;
-			this.lbl_home.Text = "Home";
+			this.lbl_home.Text = "主页键";
 			this.lbl_home.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btn_home
@@ -145,7 +145,7 @@ namespace BetterJoyForCemu {
 			this.lbl_sl_l.Name = "lbl_sl_l";
 			this.lbl_sl_l.Size = new System.Drawing.Size(78, 13);
 			this.lbl_sl_l.TabIndex = 6;
-			this.lbl_sl_l.Text = "SL Left Joycon";
+			this.lbl_sl_l.Text = "Joycon左侧SL键";
 			this.lbl_sl_l.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btn_sl_l
@@ -163,7 +163,7 @@ namespace BetterJoyForCemu {
 			this.lbl_sr_l.Name = "lbl_sr_l";
 			this.lbl_sr_l.Size = new System.Drawing.Size(80, 13);
 			this.lbl_sr_l.TabIndex = 8;
-			this.lbl_sr_l.Text = "SR Left Joycon";
+			this.lbl_sr_l.Text = "Joycon左侧SR键";
 			this.lbl_sr_l.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btn_sr_l
@@ -181,7 +181,7 @@ namespace BetterJoyForCemu {
 			this.lbl_sl_r.Name = "lbl_sl_r";
 			this.lbl_sl_r.Size = new System.Drawing.Size(85, 13);
 			this.lbl_sl_r.TabIndex = 10;
-			this.lbl_sl_r.Text = "SL Right Joycon";
+			this.lbl_sl_r.Text = "Joycon右侧SL键";
 			this.lbl_sl_r.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btn_sl_r
@@ -199,7 +199,7 @@ namespace BetterJoyForCemu {
 			this.lbl_sr_r.Name = "lbl_sr_r";
 			this.lbl_sr_r.Size = new System.Drawing.Size(87, 13);
 			this.lbl_sr_r.TabIndex = 12;
-			this.lbl_sr_r.Text = "SR Right Joycon";
+			this.lbl_sr_r.Text = "Joycon右侧SR键";
 			this.lbl_sr_r.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btn_sr_r
@@ -212,21 +212,21 @@ namespace BetterJoyForCemu {
 			// 
 			// btn_close
 			// 
-			this.btn_close.Location = new System.Drawing.Point(15, 257);
+			this.btn_close.Location = new System.Drawing.Point(105, 257);
 			this.btn_close.Name = "btn_close";
 			this.btn_close.Size = new System.Drawing.Size(75, 23);
 			this.btn_close.TabIndex = 13;
-			this.btn_close.Text = "Okay";
+			this.btn_close.Text = "退出";
 			this.btn_close.UseVisualStyleBackColor = true;
 			this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
 			// 
 			// btn_apply
 			// 
-			this.btn_apply.Location = new System.Drawing.Point(105, 257);
+			this.btn_apply.Location = new System.Drawing.Point(15, 257);
 			this.btn_apply.Name = "btn_apply";
 			this.btn_apply.Size = new System.Drawing.Size(75, 23);
 			this.btn_apply.TabIndex = 14;
-			this.btn_apply.Text = "Apply";
+			this.btn_apply.Text = "应用";
 			this.btn_apply.UseVisualStyleBackColor = true;
 			this.btn_apply.Click += new System.EventHandler(this.btn_apply_Click);
 			// 
@@ -237,7 +237,7 @@ namespace BetterJoyForCemu {
 			this.lbl_reset_mouse.Name = "lbl_reset_mouse";
 			this.lbl_reset_mouse.Size = new System.Drawing.Size(80, 13);
 			this.lbl_reset_mouse.TabIndex = 16;
-			this.lbl_reset_mouse.Text = "Re-Centre Gyro";
+			this.lbl_reset_mouse.Text = "陀螺仪复位";
 			this.lbl_reset_mouse.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btn_reset_mouse
@@ -255,7 +255,7 @@ namespace BetterJoyForCemu {
 			this.lbl_activate_gyro.Name = "lbl_activate_gyro";
 			this.lbl_activate_gyro.Size = new System.Drawing.Size(71, 13);
 			this.lbl_activate_gyro.TabIndex = 17;
-			this.lbl_activate_gyro.Text = "Activate Gyro";
+			this.lbl_activate_gyro.Text = "激活陀螺仪";
 			this.lbl_activate_gyro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// btn_active_gyro
@@ -294,7 +294,7 @@ namespace BetterJoyForCemu {
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Reassign";
-			this.Text = "Map Special Buttons";
+			this.Text = "特殊按键映射";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Reassign_FormClosing);
 			this.Load += new System.EventHandler(this.Reassign_Load);
 			this.ResumeLayout(false);

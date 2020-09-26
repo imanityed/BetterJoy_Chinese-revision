@@ -191,5 +191,9 @@ namespace BetterJoyForCemu {
                 v.type = (byte)(chooseType.SelectedIndex + 1);
             }
         }
+
+        private void _3rdPartyControllers_Load(object sender, EventArgs e) {
+
+        }
     }
 }

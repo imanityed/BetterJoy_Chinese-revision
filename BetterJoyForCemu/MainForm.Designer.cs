@@ -69,7 +69,7 @@
             // 
             // notifyIcon
             // 
-            this.notifyIcon.BalloonTipText = "Double click the tray icon to maximise";
+            this.notifyIcon.BalloonTipText = "双击任务栏图标以显示主界面";
             this.notifyIcon.BalloonTipTitle = "BetterJoy";
             this.notifyIcon.ContextMenuStrip = this.contextMenu;
             this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
@@ -83,13 +83,13 @@
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(97, 26);
+            this.contextMenu.Size = new System.Drawing.Size(101, 26);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.exitToolStripMenuItem.Text = "退出";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // version_lbl
@@ -141,7 +141,7 @@
             this.conCntrls.Size = new System.Drawing.Size(406, 144);
             this.conCntrls.TabIndex = 0;
             this.conCntrls.TabStop = false;
-            this.conCntrls.Text = "已连接的控制器";
+            this.conCntrls.Text = "连接的控制器";
             this.conCntrls.Enter += new System.EventHandler(this.conCntrls_Enter);
             // 
             // loc4
@@ -226,7 +226,7 @@
             this.con1.Size = new System.Drawing.Size(85, 85);
             this.con1.TabIndex = 0;
             this.con1.TabStop = false;
-            this.btnTip.SetToolTip(this.con1, "Click on Joycons to join/split them");
+            this.btnTip.SetToolTip(this.con1, "单击Joycons以加入或者拆分它们");
             this.con1.UseVisualStyleBackColor = true;
             // 
             // foldLbl
@@ -331,7 +331,7 @@
             this.btn_reassign_open.Name = "btn_reassign_open";
             this.btn_reassign_open.Size = new System.Drawing.Size(96, 30);
             this.btn_reassign_open.TabIndex = 13;
-            this.btn_reassign_open.Text = "按键映射";
+            this.btn_reassign_open.Text = "特殊按键映射";
             this.btn_reassign_open.UseVisualStyleBackColor = true;
             this.btn_reassign_open.Click += new System.EventHandler(this.btn_reassign_open_Click);
             // 
